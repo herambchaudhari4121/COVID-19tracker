@@ -5,6 +5,8 @@ const inputMain = document.getElementById("mainSelector");
 
 var countryCode =  "FR"; //The default is france, france is cool I guess... :)
 
+const predictionsDisplay = document.getElementById("predictions");
+
 var requestOptions = {
     method: 'GET',
     redirect: 'follow'
@@ -48,6 +50,33 @@ function Reload(){
   
         deathsDisplay.innerHTML = response.deaths;
         casesDisplay.innerHTML = response.cases;
+
+      });
+
+
+      var settingsFUTURE = {
+        "url": `https://covid19-api.org/api/prediction/${countryCode}`,
+        "method": "GET",
+        "timeout": 0,
+      };
+
+      $.ajax(settingsFUTURE).done(function (response) {
+
+        console.log(response);
+
+        response.forEach(element => {
+            var prediction = document.createElement("div");
+            prediction.setAttribute("class", "col-12 box");
+            var casesNum = document.createElement("h1");
+            casesNum.setAttribute("class", "red");
+            var dateNum = document.createElement("h2");
+            casesNum.innerHTML = `<a style="color: black; text-decoration: underline;">Predicted cases:</a> ` + element.cases;
+            dateNum.innerHTML = "Date: " + element.date;
+
+            prediction.appendChild(casesNum);
+            prediction.appendChild(dateNum);
+            predictionsDisplay.appendChild(prediction);
+        });
 
       });
 
