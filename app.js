@@ -64,6 +64,12 @@ function Reload(){
 
         console.log(response);
 
+        
+        var myNode = document.getElementById("predictions");
+            while (myNode.firstChild) {
+                myNode.removeChild(myNode.firstChild);
+            }
+
         response.forEach(element => {
             var prediction = document.createElement("div");
             prediction.setAttribute("class", "col-12 box");
