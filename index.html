@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://kit.fontawesome.com/42575f5eb5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link href="stylesheet.css" rel="stylesheet">
 
     <title>COVID-19 tracker - danieljcode</title>
 </head>
 <body onload="Start()">
 
 <div id="form">
-    <select id="mainSelector">
+    <select id="mainSelector" class="form-control">
         <option value="FR">France</option>
         <option value="DE">Germany</option>
         <option value="GB">United Kingdom</option>
@@ -20,14 +27,24 @@
         <option value="FI">Finland</option>
         <option value="HK">Hong Kong</option>
     </select>
-    <button type="click" onclick="Reload()">Refresh</button>
+    <button type="click" onclick="Reload()" class="btn btn-dark">Refresh</button>
 </div>
-        <i class="fas fa-virus"></i>
-    <h1>DEATHS:</h1>
-        <h2>0000</h2>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-6"> 
+                    <h1 style="text-decoration: underline;">Deaths:</h1>
+                    <i class="fas fa-skull-crossbones fa-3x"></i>
+                    <h2>0000</h2>
+                </div>
 
-    <h1>CASES:</h1>
-    <H2>0000</H2>
+                <div class="col-6">
+                    <h1 style="text-decoration: underline;">Cases:</h1>
+                    <i class="fas fa-virus fa-3x"></i>
+                    <H2>0000</H2>
+                </div>
+            </div>
+        </div>
 
     <script src="app.js"></script>
 </body>

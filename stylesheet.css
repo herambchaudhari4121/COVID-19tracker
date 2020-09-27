@@ -26,10 +26,33 @@ select, button{
 }
 
 select{
-
+    float: left;
     width:200px;
 }
 button{
+margin-left: auto;
+margin-right: auto;
 
     width: 100px;
+}
+
+.round{
+
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+
+}
+.btn{
+    padding: 0;
+    margin: 0;
+}
+
+.col-6, .col-6-sm{
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+
 }
