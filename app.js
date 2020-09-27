@@ -3,7 +3,7 @@ console.log("https://github.com/danieljcode");
 
 const inputMain = document.getElementById("mainSelector");
 
-var countryCode = "GB";
+var countryCode =  "FR"; //The default is france, france is cool I guess... :)
 
 var requestOptions = {
     method: 'GET',
@@ -20,7 +20,13 @@ function Start(){
       };
       
       $.ajax(settings).done(function (response) {
-        console.log(response.cases);
+        console.log(response);
+
+        var casesDisplay = document.getElementById("cases");
+        var deathsDisplay = document.getElementById("deaths")
+  
+        deathsDisplay.innerHTML = response.deaths;
+        casesDisplay.innerHTML = response.cases;
       });
 
 }
@@ -34,8 +40,19 @@ function Reload(){
       };
       
       $.ajax(settings).done(function (response) {
-        console.log(response.cases);
+
+        console.log(response);
+
+        var casesDisplay = document.getElementById("cases");
+        var deathsDisplay = document.getElementById("deaths")
+  
+        deathsDisplay.innerHTML = response.deaths;
+        casesDisplay.innerHTML = response.cases;
+
       });
+
+     
+
 }
 
 inputMain.addEventListener("change", () =>{
