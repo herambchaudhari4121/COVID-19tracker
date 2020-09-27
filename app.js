@@ -11,14 +11,26 @@ var requestOptions = {
   };
   
 
-fetch(`https://covid19-api.org/api/status/${countryCode}`, requestOptions)
+function Start(){
+    //THIS CODE WILL BE RAN ON PAGE LOAD
+    fetch(`https://covid19-api.org/api/status/${countryCode}`, requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
+
+}
+
+function Reload(){
+    
+    fetch(`https://covid19-api.org/api/status/${countryCode}`, requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+
+}
 
 inputMain.addEventListener("change", () =>{
 
     console.log(inputMain.value);
     countryCode = inputMain.value;
-
 })

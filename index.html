@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/42575f5eb5.js" crossorigin="anonymous"></script>
+
     <title>COVID-19 tracker - danieljcode</title>
 </head>
-<body>
+<body onload="Start()">
+
+<div id="form">
     <select id="mainSelector">
         <option value="FR">France</option>
         <option value="DE">Germany</option>
@@ -16,7 +20,14 @@
         <option value="FI">Finland</option>
         <option value="HK">Hong Kong</option>
     </select>
-    <button type="click">Refresh</button>
+    <button type="click" onclick="Reload()">Refresh</button>
+</div>
+        <i class="fas fa-virus"></i>
+    <h1>DEATHS:</h1>
+        <h2>0000</h2>
+
+    <h1>CASES:</h1>
+    <H2>0000</H2>
 
     <script src="app.js"></script>
 </body>
