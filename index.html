@@ -17,41 +17,46 @@
 </head>
 <body onload="Start()">
 
-<div id="form">
-    <select id="mainSelector" class="form-control">
-        <option value="FR">France</option>
-        <option value="DE">Germany</option>
-        <option value="GB">United Kingdom</option>
-        <option value="US">United States</option>
-        <option value="AU">Australia</option>
-        <option value="IE">Ireland</option>
-        <option value="FI">Finland</option>
-        <option value="HK">Hong Kong</option>
-    </select>
-    <button type="click" onclick="Reload()" class="btn btn-dark">Refresh</button>
-</div>
+    <header>
+        <i class="fas fa-virus fa-3x"></i><h2>COVID-19 Tracker</h2>
+        <p>Track the spread of Coronavirus Covid-19 Outbreak</p>
+    </header>
+
+    <div id="form">
+        <select id="mainSelector" class="custom-select sources">
+            <option value="FR">France</option>
+            <option value="DE">Germany</option>
+            <option value="GB">United Kingdom</option>
+            <option value="US">United States</option>
+            <option value="AU">Australia</option>
+            <option value="IE">Ireland</option>
+            <option value="FI">Finland</option>
+            <option value="HK">Hong Kong</option>
+        </select>
+        <button type="click" onclick="Reload()" class="btn btn-dark">Refresh</button>
+    </div>
     
-        <div class="container">
-            <div class="row">
-                <div class="col-6"> 
-                    <h1 style="text-decoration: underline;">Current deaths</h1>
-                    <i class="fas fa-skull-crossbones fa-3x"></i>
-                    <h2 id="deaths">0000</h2>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6"> 
+                <h1 style="text-decoration: underline;">Current deaths</h1>
+                <i class="fas fa-skull-crossbones fa-3x"></i>
+                <h2 id="deaths">0000</h2>
+            </div>
 
-                <div class="col-6">
-                    <h1 style="text-decoration: underline;">Current cases</h1>
-                    <i class="fas fa-virus fa-3x"></i>
-                    <h2 id="cases">0000</h2>
-                </div>
+            <div class="col-6">
+                <h1 style="text-decoration: underline;">Current cases</h1>
+                <i class="fas fa-virus fa-3x"></i>
+                <h2 id="cases">0000</h2>
+            </div>
 
-                <h1 style="text-decoration: underline;" class="center">Two week projections</h1>
-                <div class="col-12 center" id="predictions">
-                    
-                    
-                </div>
+            <h1 style="text-decoration: underline; margin: 40px auto;" class="center">Two week projections</h1>
+            <div class="col-12 center" id="predictions">
+                
+                
             </div>
         </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
