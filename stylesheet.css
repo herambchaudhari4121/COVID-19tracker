@@ -1,39 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Roboto+Mono&display=swap');
-body{
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+* {
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Baloo Tammudu 2', cursive;
-    font-family: 'Roboto Mono', monospace;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header i {
+    color: rgb(76, 169, 23);
+}
+
+header h2 {
+    font-size: 36px;
+    margin: 0px 20px;
+}
+
+header p {
+    color: rgb(73, 69, 69);
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 #form{
-
-    padding: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 
 select, button{
-
     padding: 8px;
-    height: 40px;;
-  
-
+    height: 40px;
 }
 
-select{
-    float: left;
-    width:200px;
+select, select:active, select:hover{
+    width:200px !important;
+    border-radius: 5px !important;
+    background: #ffffff;
+    box-shadow:  18px 18px 36px #d9d9d9, 
+             -18px -18px 36px #ffffff !important;
+    outline: none !important;
 }
+
+
 button{
-margin-left: auto;
-margin-right: auto;
-
+    height: max-content !important;
+    margin-left: 30px !important;
+    margin-right: auto;
     width: 100px;
+    padding: 5px 15px !important;
+    box-shadow:  9px 9px 18px #d9d9d9, 
+    -8px -8px 18px #ffffff !important;
 }
 
 .round{
@@ -49,12 +84,14 @@ margin-right: auto;
 }
 
 .col-6, .col-6-sm{
-
-    margin-left: auto;
-    margin-right: auto;
+    flex: auto;
+    padding: 30px;
+    width: 30% !important;
+    margin: 30px;
+    border-radius: 25px;
     justify-content: center;
     text-align: center;
-
+    box-shadow:  5px 5px 34px #d9d9d9 !important; 
 }
 
 #deaths{
@@ -83,13 +120,32 @@ h1{
 
 }
 
-.box{
-
-    border: 2px solid black;
-    text-align: center;
-
-    margin-top: 50px;
+#predictions {
+    display: flex;
+    flex: auto !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.box{
+    margin: 30px auto;
+    border-radius: 25px;
+    width: max-content !important;
+    text-align: center;
+    box-shadow:  5px 5px 34px #d9d9d9 !important; 
+    padding: 30px 60px !important;
+}
+
+.box h1 {
+    font-size: 28px !important;
+    margin-bottom: 20px;
+}
+
+.box h2 {
+    font-size: 16px !important;
+}
+
 a{
 
     color: black;
