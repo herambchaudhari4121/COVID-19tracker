@@ -68,7 +68,14 @@ function getFutureData(){
 
 }
 
+function getAllData() {
+  getCurrentData();
+  getFutureData();
+}
+
 inputMain.addEventListener("change", () => {
     console.log(inputMain.value);
     countryCode = inputMain.value;
 })
+
+getAllData();
