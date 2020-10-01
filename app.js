@@ -27,8 +27,8 @@ function getCurrentData(){
         var casesDisplay = document.getElementById("cases");
         var deathsDisplay = document.getElementById("deaths")
   
-        deathsDisplay.innerHTML = response.deaths;
-        casesDisplay.innerHTML = response.cases;
+        deathsDisplay.innerHTML = response.deaths.toLocaleString();
+        casesDisplay.innerHTML = response.cases.toLocaleString();
       });
 
 }
@@ -56,7 +56,7 @@ function getFutureData(){
           var casesNum = document.createElement("h1");
           casesNum.setAttribute("class", "red");
           var dateNum = document.createElement("h2");
-          casesNum.innerHTML = `<a style="color: black; text-decoration: underline;">Predicted cases:</a> ` + element.cases;
+          casesNum.innerHTML = `<a style="color: black; text-decoration: underline;">Predicted cases:</a> ` + element.cases.toLocaleString();
           dateNum.innerHTML = "Date: " + element.date;
 
           prediction.appendChild(casesNum);
