@@ -76,6 +76,7 @@ function getAllData() {
 inputMain.addEventListener("change", () => {
     console.log(inputMain.value);
     countryCode = inputMain.value;
+    getAllData();
 })
 
 getAllData();
