@@ -13,47 +13,62 @@
 
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
 
-    <title>COVID-19 tracker - danieljcode</title>
+    <title>COVID-19 Tracker - danieljcode</title>
 </head>
 <body>
-
-    <header>
-        <i class="fas fa-virus fa-3x"></i><h2>COVID-19 Tracker</h2>
-        <p>Track the spread of Coronavirus Covid-19 Outbreak</p>
-    </header>
-
-    <div id="form">
-        <h3 class="pb-3">Country</h3>
-        <select id="mainSelector" class="custom-select sources">
-            <option value="FR">France</option>
-            <option value="DE">Germany</option>
-            <option value="GB">United Kingdom</option>
-            <option value="US">United States</option>
-            <option value="AU">Australia</option>
-            <option value="IE">Ireland</option>
-            <option value="FI">Finland</option>
-            <option value="HK">Hong Kong</option>
-        </select>
-    </div>
-    
     <div class="container">
         <div class="row">
-            <div class="col-6"> 
-                <h1 style="text-decoration: underline;">Current deaths</h1>
-                <i class="fas fa-skull-crossbones fa-3x"></i>
-                <h2 id="deaths">0000</h2>
+            <div class="col">
+                <header class="pt-5">
+                    <h1><i class="fas fa-virus fa-1x mr-3"></i>COVID-19 Tracker</h1>
+                    <p class="mb-5">Track the spread of Coronavirus Covid-19 Outbreak</p>
+                    <hr>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="form">
+                    <h3 class="pb-3">Country</h3>
+                    <select id="mainSelector" class="custom-select sources">
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="US">United States</option>
+                        <option value="AU">Australia</option>
+                        <option value="IE">Ireland</option>
+                        <option value="FI">Finland</option>
+                        <option value="HK">Hong Kong</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12 col-md-6 mb-5 mb-md-0 d-flex align-items-stretch">
+                <div class="card w-100">
+                    <div class="d-flex flex-column justify-content-center align-items-center card-body">
+                        <h2 class="text-center">Current Deaths</h2>
+                        <i class="fas fa-skull-crossbones fa-3x"></i>
+                        <h3 class="mb-0" id="deaths">-</h3>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-6">
-                <h1 style="text-decoration: underline;">Current cases</h1>
-                <i class="fas fa-virus fa-3x"></i>
-                <h2 id="cases">0000</h2>
+            <div class="col-12 col-md-6 d-flex align-items-stretch">
+                <div class="card w-100">
+                    <div class="d-flex flex-column justify-content-center align-items-center card-body">
+                        <h2 class="text-center">Current Cases</h2>
+                        <i class="fas fa-virus fa-3x"></i>
+                        <h3 class="mb-0" id="cases">-</h3>
+                    </div>
+                </div>
             </div>
-
-            <h1 style="text-decoration: underline; margin: 40px auto;" class="center">Two week projections</h1>
-            <div class="col-12 center" id="predictions">
-                
-                
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <h2>Two Week Projections</h2>
+            </div>
+            <div class="col-12" id="predictions">
             </div>
         </div>
     </div>
