@@ -56,7 +56,7 @@ function getFutureData(){
           var casesNum = document.createElement("h1");
           casesNum.setAttribute("class", "red");
           var dateNum = document.createElement("h2");
-          casesNum.innerHTML = `<a style="color: black; text-decoration: underline;">Predicted Cases:</a> ` + element.cases.toLocaleString();
+          casesNum.innerHTML = `<span class="text-dark">Predicted Cases:</span> ` + element.cases.toLocaleString();
           dateNum.innerHTML = "Date: " + element.date;
 
           prediction.appendChild(casesNum);
