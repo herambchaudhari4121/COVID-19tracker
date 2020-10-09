@@ -25,10 +25,11 @@ function getCurrentData(){
         console.log(response);
 
         var casesDisplay = document.getElementById("cases");
-        var deathsDisplay = document.getElementById("deaths")
-  
+        var deathsDisplay = document.getElementById("deaths");
+        var recoveredDisplay = document.getElementById("recovered");
         deathsDisplay.innerHTML = response.deaths.toLocaleString();
         casesDisplay.innerHTML = response.cases.toLocaleString();
+        recoveredDisplay.innerHTML = response.recovered.toLocaleString();
       });
 
 }

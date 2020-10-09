@@ -107,7 +107,10 @@ button{
     padding: 10px;
 
 }
-
+#recovered{
+    color: rgb(76, 169, 23);
+    padding: 10px;
+}
 h1{
 
     text-align: center;
