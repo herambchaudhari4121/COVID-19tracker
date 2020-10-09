@@ -3,7 +3,7 @@ console.log("https://github.com/danieljcode");
 
 const inputMain = document.getElementById("mainSelector");
 
-var countryCode =  "FR"; //The default is france, france is cool I guess... :)
+var countryCode =  ""; //The default is Choose Country, It could make the website more flexible I guess... :). If you want to remove it, its all yours to do. Just trying to help
 
 const predictionsDisplay = document.getElementById("predictions");
 
