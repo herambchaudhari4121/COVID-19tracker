@@ -15,9 +15,11 @@ if (navigator.geolocation) {
             type: 'JSON'
         }, function(result) {
             countryCode = result.countryCode;
+            $('#mainSelector').val(result.countryCode).prop('selected', true)
         });
     });
 }​
+
 
 const predictionsDisplay = document.getElementById("predictions");
 var predictions;
