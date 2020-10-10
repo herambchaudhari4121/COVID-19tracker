@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-html, body{
+html, body {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -32,7 +32,7 @@ header p {
     width: 100%;
 }
 
-#form{
+#form {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -41,44 +41,49 @@ header p {
     padding: 30px;
 }
 
-select, button{
+select, button {
     padding: 8px;
     height: 40px;
 }
 
-select, select:active, select:hover{
-    width:200px !important;
+select {
+    width: 200px !important;
     border-radius: 5px !important;
     background: #ffffff;
-    box-shadow:  18px 18px 36px #d9d9d9, 
-             -18px -18px 36px #ffffff !important;
+    box-shadow: 5px 5px 30px rgba(217, 217, 217, .4);
     outline: none !important;
 }
 
+select:active, select:hover {
+    box-shadow: 5px 5px 30px rgba(217, 217, 217, .7);
+}
 
-button{
+.custom-select:focus {
+    border-color: #ced4da;
+    box-shadow: 5px 5px 30px rgba(217, 217, 217, .7);
+}
+
+button {
     height: max-content !important;
     margin-left: 30px !important;
     margin-right: auto;
     width: 100px;
     padding: 5px 15px !important;
-    box-shadow:  9px 9px 18px #d9d9d9, 
-    -8px -8px 18px #ffffff !important;
+    box-shadow: 9px 9px 18px #d9d9d9, -8px -8px 18px #ffffff !important;
 }
 
-.round{
-
+.round {
     border-radius: 5px;
     padding: 0;
     margin: 0;
-
 }
-.btn{
+
+.btn {
     padding: 0;
     margin: 0;
 }
 
-.col-6, .col-6-sm{
+.col-6, .col-6-sm {
     flex: auto;
     padding: 30px;
     width: 30% !important;
@@ -86,42 +91,40 @@ button{
     border-radius: 25px;
     justify-content: center;
     text-align: center;
-    box-shadow:  5px 5px 34px #d9d9d9 !important; 
+    box-shadow: 5px 5px 34px #d9d9d9 !important;
 }
 
 .card {
-    box-shadow: 5px 5px 34px #d9d9d9;
+    box-shadow: 5px 5px 30px rgba(217, 217, 217, .4);
     border: 0;
     border-radius: 25px;
 }
 
-#deaths{
+.card:hover {
+    box-shadow: 5px 5px 30px rgba(217, 217, 217, .7);
+}
 
+#deaths {
     color: crimson;
     padding: 10px;
 }
 
-#cases{
-
+#cases {
     color: rgb(255, 175, 1);
     padding: 10px;
-
 }
-#recovered{
+
+#recovered {
     color: rgb(76, 169, 23);
     padding: 10px;
 }
-h1{
 
+h1 {
     text-align: center;
-
-
 }
 
-.red{
-
+.red {
     color: red;
-
 }
 
 #predictions {
@@ -132,12 +135,16 @@ h1{
     align-items: center;
 }
 
-.box{
+.box {
     margin: 30px auto;
     border-radius: 25px;
     text-align: center;
-    box-shadow:  5px 5px 34px #d9d9d9 !important; 
+    box-shadow: 5px 5px 30px rgba(217, 217, 217, .4);
     padding: 30px 60px !important;
+}
+
+.box:hover {
+    box-shadow: 5px 5px 30px rgba(217, 217, 217, .7);
 }
 
 .box h1 {
@@ -149,8 +156,6 @@ h1{
     font-size: 16px !important;
 }
 
-a{
-
+a {
     color: black;
-
 }
