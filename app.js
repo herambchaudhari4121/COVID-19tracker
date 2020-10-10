@@ -5,6 +5,20 @@ const inputMain = document.getElementById("mainSelector");
 
 var countryCode =  "FR";
 
+// if permission granted for geolocation automatically select user's country
+
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+        $.getJSON('http://ws.geonames.org/countryCode', {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+            type: 'JSON'
+        }, function(result) {
+            countryCode = result.countryCode;
+        });
+    });
+}​
+
 const predictionsDisplay = document.getElementById("predictions");
 var predictions;
 
