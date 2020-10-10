@@ -3,9 +3,10 @@ console.log("https://github.com/danieljcode");
 
 const inputMain = document.getElementById("mainSelector");
 
-var countryCode =  ""; //The default is Choose Country, It could make the website more flexible I guess... :). If you want to remove it, its all yours to do. Just trying to help
+var countryCode =  "FR";
 
 const predictionsDisplay = document.getElementById("predictions");
+var predictions;
 
 var requestOptions = {
     method: 'GET',
@@ -44,6 +45,8 @@ function getFutureData(){
     $.ajax(settingsFUTURE).done(function (response) {
 
       console.log(response);
+      predictions = response;
+      createGraph();
 
       
       var myNode = document.getElementById("predictions");
@@ -81,3 +84,46 @@ inputMain.addEventListener("change", () => {
 })
 
 getAllData();
+
+function createGraph()
+{
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [predictions[0].date, predictions[1].date, predictions[2].date, predictions[3].date, predictions[4].date, predictions[5].date],
+        datasets: [{
+            label: 'Number of cases',
+            data: [predictions[0].cases,predictions[1].cases,predictions[2].cases,predictions[3].cases,predictions[4].cases,predictions[5].cases],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: false
+                }
+            }]
+        },
+        responsive: true,
+    }
+});
+}
