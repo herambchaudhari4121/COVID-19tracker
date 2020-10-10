@@ -91,6 +91,7 @@ A live COVID-19 tracker (deaths, cases, recovered) for 20 countries around the w
 - https://github.com/endrose
 - https://github.com/singhayushh
 - https://github.com/dpakgtm07
+- https://github.com/sqwyer
 
 
 (PLEASE DON'T ADD YOURSELF TO THE CONTRIBUTORS LIST IN A PULL REQUEST... I WILL ADD YOU TO THIS LIST IF I MERGE YOUR PULL REQUEST)
