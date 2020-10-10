@@ -46,7 +46,7 @@ function getFutureData(){
 
       console.log(response);
       predictions = response;
-      createGraph();
+      
 
       
       var myNode = document.getElementById("predictions");
@@ -67,6 +67,8 @@ function getFutureData(){
           prediction.appendChild(dateNum);
           predictionsDisplay.appendChild(prediction);
       });
+
+      createGraph();
 
     });
 
@@ -90,7 +92,7 @@ function createGraph()
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'line',
+    type: 'bar',
     data: {
         labels: [predictions[0].date, predictions[1].date, predictions[2].date, predictions[3].date, predictions[4].date, predictions[5].date],
         datasets: [{
@@ -122,8 +124,7 @@ var myChart = new Chart(ctx, {
                     beginAtZero: false
                 }
             }]
-        },
-        responsive: true,
+        }
     }
 });
 }
