@@ -5,21 +5,15 @@ const inputMain = document.getElementById("mainSelector");
 
 var countryCode =  "FR";
 
-// if permission granted for geolocation automatically select user's country
-
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-        $.getJSON('http://ws.geonames.org/countryCode', {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-            type: 'JSON'
-        }, function(result) {
-            countryCode = result.countryCode;
-            $('#mainSelector').val(result.countryCode).prop('selected', true)
-        });
-    });
-}​
-
+    navigator.geolocation.getCurrentPosition(async function(position) { 
+        await $.get("https://ipinfo.io", function(response) {
+            countryCode = response.country;
+            $('#mainSelector').val(response.country).prop('selected', true);
+            getAllData();
+        }, "jsonp");
+     });
+}
 
 const predictionsDisplay = document.getElementById("predictions");
 var predictions;
