@@ -5,6 +5,16 @@ const inputMain = document.getElementById("mainSelector");
 
 var countryCode =  "FR";
 
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(async function(position) { 
+        await $.get("https://ipinfo.io", function(response) {
+            countryCode = response.country;
+            $('#mainSelector').val(response.country).prop('selected', true);
+            getAllData();
+        }, "jsonp");
+     });
+}
+
 const predictionsDisplay = document.getElementById("predictions");
 var predictions;
 
