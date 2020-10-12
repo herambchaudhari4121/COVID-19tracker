@@ -1,25 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h4, h5, h6 {
     font-weight: 700;
 }
 
@@ -49,8 +41,7 @@ header p {
     padding: 30px;
 }
 
-select,
-button {
+select, button {
     padding: 8px;
     height: 40px;
 }
@@ -63,8 +54,7 @@ select {
     outline: none !important;
 }
 
-select:active,
-select:hover {
+select:active, select:hover {
     box-shadow: 5px 5px 30px rgba(217, 217, 217, .7);
 }
 
@@ -93,8 +83,7 @@ button {
     margin: 0;
 }
 
-.col-6,
-.col-6-sm {
+.col-6, .col-6-sm {
     flex: auto;
     padding: 30px;
     width: 30% !important;
@@ -146,8 +135,7 @@ h1 {
     align-items: center;
 }
 
-.box,
-.boxBlue {
+.box, .boxBlue {
     margin: 30px auto;
     border-radius: 25px;
     text-align: center;
@@ -167,16 +155,34 @@ h1 {
 
 .box h2 {
     font-size: 15px !important;
-    color: #656565;
+    color:#656565;
     font-style: italic;
-    font-weight: 400;
+    font-weight:400;
 }
 
 a {
     color: black;
 }
+.boxBlue{
+    background-color: rgb(156, 208, 250);
+    opacity: 1;
+}
+.info{
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    box-shadow: 5px 5px 30px rgba(217, 217, 217, 1.8);
+}
 
-.boxBlue {
-    background-color: rgb(189, 212, 231);
+.info h3, .info h5{
+    text-align: center;
+    
+}
+
+.info a{
+    color: rgb(54, 75, 197);
     opacity: 1;
 }
