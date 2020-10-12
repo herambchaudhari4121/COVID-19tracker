@@ -2,13 +2,16 @@ console.log("Built in 2020 by danieljcode");
 console.log("https://github.com/danieljcode");
 
 const inputMain = document.getElementById("mainSelector");
+const lastupdate = document.getElementById("last-update");
 
+var timezone='Europe/Paris';
 var countryCode =  "FR";
 
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(async function(position) { 
         await $.get("https://ipinfo.io", function(response) {
             countryCode = response.country;
+            timezone=response.timezone;
             $('#mainSelector').val(response.country).prop('selected', true);
             getAllData();
         }, "jsonp");
@@ -41,8 +44,19 @@ function getCurrentData(){
         deathsDisplay.innerHTML = response.deaths.toLocaleString();
         casesDisplay.innerHTML = response.cases.toLocaleString();
         recoveredDisplay.innerHTML = response.recovered.toLocaleString();
+        lastupdate.innerHTML="Last Updated: "+convertLastUpdateTime(response.last_update).toLocaleString();
+        //lastupdate.innerHTML=convertTime().toLocaleString();
+        // lastupdate.innerHTML="Last Updated: "+response.last_update.toLocaleString('en-US', { timeZone: 'America/New_York' });
       });
 
+}
+function convertLastUpdateTime(isoString)
+{
+  var startTime = new Date(isoString );
+  startTime =   new Date( startTime.getTime() + ( startTime.getTimezoneOffset() * 60000 ) );
+  var text=startTime; 
+  return(text)
+  //lastupdate.innerHTML=startTime.toLocaleString();
 }
 
 function getFutureData(){
