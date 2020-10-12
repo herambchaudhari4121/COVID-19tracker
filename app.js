@@ -191,3 +191,26 @@ var myChart = new Chart(ctx, {
     }
 });
 }
+
+// Sort name of countries selection
+sortList();
+
+function sortList(){
+    var container = document.getElementById("mainSelector");
+    var contents = container.querySelectorAll("option");
+
+    var list = [];
+    for(var i=0; i<contents.length; i++){
+        list.push(contents[i]);
+    }
+
+    list.sort(function(a, b){
+        return a.innerHTML < b.innerHTML ? -1 : (a.innerHTML > b.innerHTML ? 1 : 0);
+    });
+
+    list.reverse();
+
+    for(var i=0; i<list.length; i++){
+        container.insertBefore(list[i], container.firstChild);
+    }
+}
