@@ -81,7 +81,7 @@ function getFutureData(){
 
       response.forEach(element => {
           var prediction = document.createElement("div");
-          prediction.setAttribute("class", "col-12 box");
+          prediction.setAttribute("class", "box");
           var casesNum = document.createElement("h1");
           casesNum.setAttribute("class", "red");
           var dateNum = document.createElement("h2");
