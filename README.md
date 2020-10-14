@@ -82,6 +82,16 @@ A live COVID-19 tracker (deaths, cases, recovered) for 20 countries around the w
 78. Sudan
 79. Morocco
 80. Ghana
+81. El Salvador
+82. Albania
+83. Chad
+84. Costa Rica
+85. Dominican Republic
+86. Haiti
+87. Israel
+88. Jordan
+89. Libya
+90. Mali
                         
 
 ### Contributors
