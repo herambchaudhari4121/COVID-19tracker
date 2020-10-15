@@ -105,5 +105,6 @@ A live COVID-19 tracker (deaths, cases, recovered) for 20 countries around the w
 - https://github.com/LeVuMinhHuy
 - https://github.com/razod
 - https://github.com/kingslayer2357
+- https://github.com/kingslayer2357
 
 (PLEASE DON'T ADD YOURSELF TO THE CONTRIBUTORS LIST IN A PULL REQUEST... I WILL ADD YOU TO THIS LIST IF I MERGE YOUR PULL REQUEST)
