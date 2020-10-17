@@ -15,7 +15,7 @@ h1, h2, h3, h4, h4, h5, h6 {
     font-weight: 700;
 }
 
-header i {
+header .fa-virus {
     color: rgb(76, 169, 23);
 }
 
@@ -83,17 +83,6 @@ button {
     margin: 0;
 }
 
-.col-6, .col-6-sm {
-    flex: auto;
-    padding: 30px;
-    width: 30% !important;
-    margin: 30px;
-    border-radius: 25px;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 5px 5px 34px #d9d9d9 !important;
-}
-
 .card {
     box-shadow: 5px 5px 30px rgba(217, 217, 217, .4);
     border: 0;
@@ -102,21 +91,6 @@ button {
 
 .card:hover {
     box-shadow: 5px 5px 30px rgba(217, 217, 217, .7);
-}
-
-#deaths {
-    color: crimson;
-    padding: 10px;
-}
-
-#cases {
-    color: rgb(255, 175, 1);
-    padding: 10px;
-}
-
-#recovered {
-    color: rgb(76, 169, 23);
-    padding: 10px;
 }
 
 h1 {
@@ -167,10 +141,8 @@ a:hover{
     color: #4d89d3;
     text-decoration: none;
 }
-.boxBlue{
-    background-color: rgb(156, 208, 250);
-    opacity: 1;
-}
+
+
 .info{
     padding: 10px;
     border-radius: 25px;
