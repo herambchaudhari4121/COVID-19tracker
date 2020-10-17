@@ -7,8 +7,9 @@ const lastupdate = document.getElementById("last-update");
 var timezone='Europe/Paris';
 var countryCode =  "FR";
 
+
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(async function(position) { 
+    navigator.geolocation.getCurrentPosition(async function(position) {
         await $.get("https://ipinfo.io", function(response) {
             countryCode = response.country;
             timezone=response.timezone;
@@ -34,7 +35,7 @@ function getCurrentData(){
         "method": "GET",
         "timeout": 0,
       };
-      
+
       $.ajax(settings).done(function (response) {
         console.log(response);
 
@@ -54,12 +55,13 @@ function convertLastUpdateTime(isoString)
 {
   var startTime = new Date(isoString );
   startTime =   new Date( startTime.getTime() + ( startTime.getTimezoneOffset() * 60000 ) );
-  var text=startTime; 
+  var text=startTime;
   return(text)
   //lastupdate.innerHTML=startTime.toLocaleString();
 }
 
 function getFutureData(){
+
     var settingsFUTURE = {
       "url": `https://covid19-api.org/api/prediction/${countryCode}`,
       "method": "GET",
@@ -70,9 +72,9 @@ function getFutureData(){
 
       console.log(response);
       predictions = response;
-      
 
-      
+
+
       var myNode = document.getElementById("predictions");
           while (myNode.firstChild) {
               myNode.removeChild(myNode.firstChild);
@@ -81,7 +83,7 @@ function getFutureData(){
 
       response.forEach(element => {
           var prediction = document.createElement("div");
-          prediction.setAttribute("class", "col-12 box");
+          prediction.setAttribute("class", "box-");
           var casesNum = document.createElement("h1");
           casesNum.setAttribute("class", "red");
           var dateNum = document.createElement("h2");
@@ -102,6 +104,7 @@ function getFutureData(){
 function getAllData() {
   getCurrentData();
   getFutureData();
+
 }
 
 inputMain.addEventListener("change", () => {
@@ -109,6 +112,7 @@ inputMain.addEventListener("change", () => {
     countryCode = inputMain.value;
     getAllData();
 })
+
 
 getAllData();
 
@@ -142,7 +146,7 @@ var myChart = new Chart(ctx, {
             borderWidth: 2
         }]
     },
-    options: {
+    options: {events: [] ,
         scales: {
             yAxes: [{
                 ticks: {
@@ -180,7 +184,7 @@ var myChart = new Chart(ctx, {
             borderWidth: 2
         }]
     },
-    options: {
+    options: {events: [] ,
         scales: {
             yAxes: [{
                 ticks: {

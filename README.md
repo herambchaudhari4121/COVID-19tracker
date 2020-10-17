@@ -82,6 +82,16 @@ A live COVID-19 tracker (deaths, cases, recovered) for 20 countries around the w
 78. Sudan
 79. Morocco
 80. Ghana
+81. El Salvador
+82. Albania
+83. Chad
+84. Costa Rica
+85. Dominican Republic
+86. Haiti
+87. Israel
+88. Jordan
+89. Libya
+90. Mali
                         
 
 ### Contributors
@@ -93,6 +103,8 @@ A live COVID-19 tracker (deaths, cases, recovered) for 20 countries around the w
 - https://github.com/dpakgtm07
 - https://github.com/sqwyer
 - https://github.com/LeVuMinhHuy
-
+- https://github.com/razod
+- https://github.com/kingslayer2357
+- https://github.com/gaurav7019
 
 (PLEASE DON'T ADD YOURSELF TO THE CONTRIBUTORS LIST IN A PULL REQUEST... I WILL ADD YOU TO THIS LIST IF I MERGE YOUR PULL REQUEST)

@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 html, body {
@@ -135,7 +135,7 @@ h1 {
     align-items: center;
 }
 
-.box, .boxBlue {
+.box-, .boxBlue {
     margin: 30px auto;
     border-radius: 25px;
     text-align: center;
@@ -143,17 +143,17 @@ h1 {
     padding: 30px 60px !important;
 }
 
-.box:hover {
+.box-:hover {
     box-shadow: 5px 5px 30px rgba(217, 217, 217, .7);
 }
 
-.box h1 {
+.box- h1 {
     font-size: 28px !important;
     margin-bottom: 10px;
 
 }
 
-.box h2 {
+.box- h2 {
     font-size: 15px !important;
     color:#656565;
     font-style: italic;
@@ -161,7 +161,11 @@ h1 {
 }
 
 a {
-    color: black;
+    color: #4e98f1;
+}
+a:hover{
+    color: #4d89d3;
+    text-decoration: none;
 }
 .boxBlue{
     background-color: rgb(156, 208, 250);
