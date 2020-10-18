@@ -22,6 +22,7 @@ h6 {
   font-weight: 700;
 }
 
+
 header i {
   color: rgb(76, 169, 23);
 }
@@ -92,18 +93,6 @@ button {
   margin: 0;
 }
 
-.col-6,
-.col-6-sm {
-  flex: auto;
-  padding: 30px;
-  width: 30% !important;
-  margin: 30px;
-  border-radius: 25px;
-  justify-content: center;
-  text-align: center;
-  box-shadow: 5px 5px 34px #d9d9d9 !important;
-}
-
 .card {
   box-shadow: 5px 5px 30px rgba(217, 217, 217, 0.4);
   border: 0;
@@ -117,6 +106,7 @@ button {
 .card:hover .fa-virus:hover {
   color: rgb(76, 169, 23);
 }
+
 
 #deaths {
   color: crimson;
@@ -366,6 +356,7 @@ a:hover {
   }
 }
 
+
 .faa-ring.animated,
 .faa-ring.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-ring {
@@ -488,7 +479,8 @@ a:hover {
 .dark-mode h6,
 .dark-mode .card i,
 .dark-mode .custom-select,
-.dark-mode p {
+.dark-mode p,
+.dark-mode span {
   color: #ccc;
 }
 .dark-mode .card,
@@ -530,4 +522,8 @@ a:hover {
 }
 .footer .copyright p {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer{
+    background: #152F4F;
 }

@@ -67,6 +67,7 @@ function convertLastUpdateTime(isoString) {
   //lastupdate.innerHTML=startTime.toLocaleString();
 }
 
+
 function getFutureData() {
   var settingsFUTURE = {
     url: `https://covid19-api.org/api/prediction/${countryCode}`,
@@ -78,25 +79,62 @@ function getFutureData() {
     console.log(response);
     predictions = response;
 
-    var myNode = document.getElementById("predictions");
-    while (myNode.firstChild) {
-      myNode.removeChild(myNode.firstChild);
-    }
+        var myNode = document.getElementById("predictions");
+            while (myNode.firstChild) {
+                myNode.removeChild(myNode.firstChild);
+            }
+
+
+        response.forEach(element => {
+            var predictionWrapper = document.createElement("div");
+            predictionWrapper.setAttribute("class", "card mb-5 w-100");
+
+            var prediction = document.createElement("div");
+            prediction.setAttribute("class", "card-body d-flex flex-column align-items-center");
+
+            var title = document.createElement("h3");
+            title.innerHTML = "Predicted Cases";
+
+            var casesNum = document.createElement("h3");
+            casesNum.setAttribute("class", "text-danger");
+            casesNum.innerHTML = element.cases.toLocaleString();
+
+            var dateNum = document.createElement("span");
+            dateNum.setAttribute("class", "font-italic");
+            dateNum.innerHTML = "Date: " + element.date;
+
+            predictionWrapper.appendChild(prediction);
+            prediction.appendChild(title);
+            prediction.appendChild(casesNum);
+            prediction.appendChild(dateNum);
+            predictionsDisplay.appendChild(predictionWrapper);
+        });
+
+        createGraph();
 
     response.forEach((element) => {
-      var prediction = document.createElement("div");
-      prediction.setAttribute("class", "box-");
-      var casesNum = document.createElement("h1");
-      casesNum.setAttribute("class", "red");
-      var dateNum = document.createElement("h2");
-      casesNum.innerHTML =
-        `<span class="text-dark">Predicted Cases:</span> ` +
-        element.cases.toLocaleString();
-      dateNum.innerHTML = "Date: " + element.date;
+        var predictionWrapper = document.createElement("div");
+        predictionWrapper.setAttribute("class", "card mb-5 w-100");
 
-      prediction.appendChild(casesNum);
-      prediction.appendChild(dateNum);
-      predictionsDisplay.appendChild(prediction);
+        var prediction = document.createElement("div");
+        prediction.setAttribute("class", "card-body d-flex flex-column align-items-center");
+
+        var title = document.createElement("h3");
+        title.innerHTML = "Predicted Cases";
+
+        var casesNum = document.createElement("h3");
+        casesNum.setAttribute("class", "text-danger");
+        casesNum.innerHTML = element.cases.toLocaleString();
+
+        var dateNum = document.createElement("span");
+        dateNum.setAttribute("class", "font-italic");
+        dateNum.innerHTML = "Date: " + element.date;
+
+        predictionWrapper.appendChild(prediction);
+        prediction.appendChild(title);
+        prediction.appendChild(casesNum);
+        prediction.appendChild(dateNum);
+        predictionsDisplay.appendChild(predictionWrapper);
     });
 
     createGraph();
