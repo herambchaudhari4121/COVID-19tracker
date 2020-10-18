@@ -479,7 +479,8 @@ a:hover {
 .dark-mode h6,
 .dark-mode .card i,
 .dark-mode .custom-select,
-.dark-mode p {
+.dark-mode p,
+.dark-mode span {
   color: #ccc;
 }
 .dark-mode .card,
