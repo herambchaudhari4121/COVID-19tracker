@@ -1,110 +1,68 @@
-# About
-A live COVID-19 tracker (deaths, cases, recovered) for 20 countries around the world! Written in Javascript, HTML & CSS
-#### Please Star if you fork or create a pull request so others can find the project too! :)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
- ### Current countries:
-1. France
-2. Germany
-3. United Kingdom
-4. United States
-5. Australia
-6. Ireland
-7. Finland
-8. Hong Kong
-9. Indonesia
-10. Belarus
-11. Belgium
-12. Russia
-13. Saudi Arabia
-14. Spain
-15. Sweden
-16. Afghanistan
-17. India
-18. Brazil
-19. Nepal
-20. China
-21. New Zealand
-22. Mexico
-23. Netherlands
-24. Denmark
-25. Iceland
-26. Norway
-27. Colombia
-28. South Africa
-29. Peru
-30. United Arab Emirates
-31. Iran
-32. Chile
-33. Iraq
-34. Bangladesh
-35. Bhutan
-36. Maldives
-37. Pakistan
-38. Sri Lanka
-39. Faroe Islands
-40. Aland Islands
-41. Greenland
-42. Philippines
-44. Austria
-45. Bulgaria
-46. Croatia
-47. Cyprus
-48. Czech Republic
-49. Estonia
-50. Greece
-51. Hungary
-52. Italy
-53. Latvia
-54. Lithuania
-55. Luxembourg
-56. Malta
-57. Poland
-58. Portugal
-59. Romania
-60. Slovakia
-61. Slovenia
-62. Ecuador
-63. Argentina
-64. Bolivia
-65. Guyan
-66. Paraguay
-67. Suriname
-68. Uruguay
-69. Venezuela
-70. Nigeria
-71. Ethiopia
-72. Egypt
-73. Congo
-74. Tanzania
-75. Kenya
-76. Uganda
-77. Algeria
-78. Sudan
-79. Morocco
-80. Ghana
-81. El Salvador
-82. Albania
-83. Chad
-84. Costa Rica
-85. Dominican Republic
-86. Haiti
-87. Israel
-88. Jordan
-89. Libya
-90. Mali
-                        
+## Available Scripts
 
-### Contributors
-- **https://github.com/danieljcode** (https://github.com/danieljcode/COVID-19tracker)
-- https://github.com/ptrandev
-- https://github.com/link2rn
-- https://github.com/endrose
-- https://github.com/singhayushh
-- https://github.com/dpakgtm07
-- https://github.com/sqwyer
-- https://github.com/LeVuMinhHuy
-- https://github.com/razod
-- https://github.com/kingslayer2357
-- https://github.com/gaurav7019
+In the project directory, you can run:
 
-(PLEASE DON'T ADD YOURSELF TO THE CONTRIBUTORS LIST IN A PULL REQUEST... I WILL ADD YOU TO THIS LIST IF I MERGE YOUR PULL REQUEST)
+### `yarn start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `yarn test`
+
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
