@@ -1,5 +1,5 @@
-![](https://img.shields.io/github/last-commit/danieljcode/Covid-19Tracker)
-![](https://img.shields.io/github/commit-activity/m/danieljcode/COVID-19Tracker)
+![](https://img.shields.io/github/last-commit/danieljcode/COVID-19tracker)
+![](https://img.shields.io/github/commit-activity/m/danieljcode/COVID-19tracker)
 # About
 A live COVID-19 tracker (deaths, cases, recovered) for 20 countries around the world! Written in Javascript, HTML & CSS
 #### Please Star if you fork or create a pull request so others can find the project too! :)
@@ -109,5 +109,6 @@ A live COVID-19 tracker (deaths, cases, recovered) for 20 countries around the w
 - https://github.com/kingslayer2357
 - https://github.com/gaurav7019
 - https://github.com/lokeshkumar9600
+- https://github.com/Creatoon
 
 (PLEASE DON'T ADD YOURSELF TO THE CONTRIBUTORS LIST IN A PULL REQUEST... I WILL ADD YOU TO THIS LIST IF I MERGE YOUR PULL REQUEST)
