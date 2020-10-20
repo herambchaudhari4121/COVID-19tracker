@@ -530,6 +530,16 @@ a:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.fa-heart:hover {
+   color: green;
+}
+.fa-virus:hover {
+  color: orange;
+}
+.fa-skull-crossbones:hover {
+  color: red;
+}
+
 .dark-mode .card .fa-heart:hover {
   color: green;
 }
