@@ -1,11 +1,4 @@
-# About
-
-A live COVID-19 tracker (deaths, cases, recovered) for 20 countries around the world! Written in Javascript, HTML & CSS
-
-#### Please Star if you fork or create a pull request so others can find the project too! :)
-
 ### Current countries:
-
 1. France
 2. Germany
 3. United Kingdom
@@ -95,5 +88,6 @@ A live COVID-19 tracker (deaths, cases, recovered) for 20 countries around the w
 - https://github.com/singhayushh
 - https://github.com/dpakgtm07
 - https://github.com/sqwyer
+- https://github.com/YagyikPrajapat
 
-(PLEASE DON'T ADD YOURSELF TO THE CONTRIBUTORS LIST IN A PULL REQUEST... I WILL ADD YOU TO THIS LIST IF I MERGE YOUR PULL REQUEST)
+(PLEASE ADD YOURSELF TO THE CONTRIBUTORS LIST WHEN YOU CREATE A PULL REQUEST)
