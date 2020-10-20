@@ -6,6 +6,8 @@ This project has two sides, a React side and a vanilla HTML, CSS & JS side! You 
 
 We welcome all contributions! (Just not spam ones...)
 
+Legacy version: https://danieljcode.github.io/COVID-19tracker/HTML-legacyVersion/index.html
+
 
 ### React App
 ### `yarn start`
