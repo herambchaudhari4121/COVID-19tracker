@@ -41,46 +41,46 @@
 40. Aland Islands
 41. Greenland
 42. Philippines
-44. Austria
-45. Bulgaria
-46. Croatia
-47. Cyprus
-48. Czech Republic
-49. Estonia
-50. Greece
-51. Hungary
-52. Italy
-53. Latvia
-54. Lithuania
-55. Luxembourg
-56. Malta
-57. Poland
-58. Portugal
-59. Romania
-60. Slovakia
-61. Slovenia
-62. Ecuador
-63. Argentina
-64. Bolivia
-65. Guyan
-66. Paraguay
-67. Suriname
-68. Uruguay
-69. Venezuela
-70. Nigeria
-71. Ethiopia
-72. Egypt
-73. Congo
-74. Tanzania
-75. Kenya
-76. Uganda
-77. Algeria
-78. Sudan
-79. Morocco
-80. Ghana
-                        
+43. Austria
+44. Bulgaria
+45. Croatia
+46. Cyprus
+47. Czech Republic
+48. Estonia
+49. Greece
+50. Hungary
+51. Italy
+52. Latvia
+53. Lithuania
+54. Luxembourg
+55. Malta
+56. Poland
+57. Portugal
+58. Romania
+59. Slovakia
+60. Slovenia
+61. Ecuador
+62. Argentina
+63. Bolivia
+64. Guyan
+65. Paraguay
+66. Suriname
+67. Uruguay
+68. Venezuela
+69. Nigeria
+70. Ethiopia
+71. Egypt
+72. Congo
+73. Tanzania
+74. Kenya
+75. Uganda
+76. Algeria
+77. Sudan
+78. Morocco
+79. Ghana
 
 ### Contributors
+
 - **https://github.com/danieljcode** (https://github.com/danieljcode/COVID-19tracker)
 - https://github.com/ptrandev
 - https://github.com/link2rn
@@ -89,6 +89,5 @@
 - https://github.com/dpakgtm07
 - https://github.com/sqwyer
 - https://github.com/YagyikPrajapat
-
 
 (PLEASE ADD YOURSELF TO THE CONTRIBUTORS LIST WHEN YOU CREATE A PULL REQUEST)
