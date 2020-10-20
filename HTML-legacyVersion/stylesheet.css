@@ -114,9 +114,7 @@ button {
   box-shadow: 5px 5px 30px rgba(217, 217, 217, 0.7);
 }
 
-.card:hover .fa-virus:hover {
-  color: rgb(76, 169, 23);
-}
+
 
 #deaths {
   color: crimson;
@@ -530,4 +528,32 @@ a:hover {
 }
 .footer .copyright p {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .card .fa-heart:hover {
+  color: green;
+}
+.dark-mode .card .fa-virus:hover {
+  color: orange;
+}
+.dark-mode .card .fa-skull-crossbones:hover {
+  color: red;
+}
+
+.dark-mode .card{
+  transition: all .4s ease-in-out;
+}
+
+.dark-mode .card:hover {
+  box-shadow: 5px 5px 30px rgba(15, 15, 15, 0.801);
+  border-radius: 50px;
+  transform: scale(1.1);
+}
+ .card{
+  transition: all .4s ease-in-out;
+}
+
+.card:hover {
+  border-radius: 50px;
+  transform: scale(1.1);
 }
