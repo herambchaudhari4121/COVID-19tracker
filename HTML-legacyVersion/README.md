@@ -88,6 +88,7 @@
 - https://github.com/singhayushh
 - https://github.com/dpakgtm07
 - https://github.com/sqwyer
+- https://github.com/YagyikPrajapat
 
 
 (PLEASE ADD YOURSELF TO THE CONTRIBUTORS LIST WHEN YOU CREATE A PULL REQUEST)
