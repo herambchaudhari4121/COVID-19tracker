@@ -10,6 +10,9 @@ Legacy version: https://danieljcode.github.io/COVID-19tracker/HTML-legacyVersion
 
 
 ### React App
+React version: https://covid-19tracker-8adaf.web.app/
+##### **The React version of COVID-19tracker is hosted by https://github.com/Srikark-17)**
+
 ### `yarn start`
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
