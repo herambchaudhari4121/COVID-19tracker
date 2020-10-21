@@ -99,6 +99,6 @@
 - https://github.com/dpakgtm07
 - https://github.com/sqwyer
 - https://github.com/YagyikPrajapat
-- https://github.com/tck13_
+- https://github.com/tck13
 
 (PLEASE ADD YOURSELF TO THE CONTRIBUTORS LIST WHEN YOU CREATE A PULL REQUEST)
