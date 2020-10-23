@@ -53,6 +53,7 @@ body {
   max-width: 100%;
   height: auto;
   margin-bottom: 15px;
+  margin-right: 15px;
 }
 
 .app__information > h3 {
