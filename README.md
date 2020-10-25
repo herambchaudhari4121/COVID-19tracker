@@ -1,3 +1,14 @@
+<html>
+<body>
+
+<h2>BE SAFE AND GET UPDATED</h2>
+
+<img src="https://www.fda.gov/files/styles/main_image_1/public/how-you-can-make-a-difference-1600x900.gif?itok=UjeaXLkt.jpg" alt="W3Schools.com" style="width:699px;height:599px;">
+
+</body>
+</html>
+
+
 ## About
 A live COVID-19 tracker (deaths, cases, recovered) for **217 countries** around the world! Written in Javascript, HTML & CSS
 #### Please Star if you fork or create a pull request so others can find the project too! :)
